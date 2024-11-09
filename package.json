@@ -9,7 +9,8 @@
     "deploy": "git subtree push --prefix dist origin gh-pages",
     "build": "webpack",
     "pwrite":"npx prettier . --write",
-    "pcheck":"npx prettier . --check"
+    "pcheck":"npx prettier . --check",
+    "whatever": "git add --all && git commit -m 'minor_changes' && git push"
   },
   "keywords": [],
   "author": "",
