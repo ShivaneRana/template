@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack:server": "webpack server",
-    "webpack:deploy": "git subtree push --prefix dist origin gh-pages",
+    "webpack:deploy": "git add --all && git commit -m 'bundled' && git subtree push --prefix dist origin gh-pages && git push",
     "webpack:build": "webpack",
     "prettier:write": "npx prettier . --write",
     "prettier:check": "npx prettier . --check",
