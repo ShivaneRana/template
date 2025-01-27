@@ -4,7 +4,8 @@
   "description": "it is what the name suggest just a template repo.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "watch":"jest --watch *.js",
     "webpack:server": "webpack server",
     "webpack:deploy": "git add --all && git commit -m 'bundled' && git subtree push --prefix dist origin gh-pages && git push",
     "webpack:build": "webpack",
@@ -12,7 +13,7 @@
     "prettier:check": "npx prettier . --check",
     "whatever": "git add --all && git commit -m 'minor_changes' && git push",
     "lint": "eslint",
-    "lint:fix" : "eslint --fix"
+    "lint:fix": "eslint --fix"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +26,7 @@
     "globals": "^15.12.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.0",
+    "jest": "^29.7.0",
     "prettier": "3.3.3",
     "style-loader": "^4.0.0",
     "webpack": "^5.94.0",
