@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "watch":"jest --watch *.js",
-    "server": "server",
+    "server": "webpack server",
     "deploy": "git add --all && git commit -m 'bundled' && git subtree push --prefix dist origin gh-pages && git push",
     "build": "webpack",
     "pwrite": "npx prettier . --write",
