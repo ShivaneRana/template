@@ -6,11 +6,11 @@
   "scripts": {
     "test": "jest",
     "watch":"jest --watch *.js",
-    "webpack:server": "webpack server",
-    "webpack:deploy": "git add --all && git commit -m 'bundled' && git subtree push --prefix dist origin gh-pages && git push",
-    "webpack:build": "webpack",
-    "prettier:write": "npx prettier . --write",
-    "prettier:check": "npx prettier . --check",
+    "server": "server",
+    "deploy": "git add --all && git commit -m 'bundled' && git subtree push --prefix dist origin gh-pages && git push",
+    "build": "webpack",
+    "pwrite": "npx prettier . --write",
+    "pcheck": "npx prettier . --check",
     "whatever": "git add --all && git commit -m 'minor_changes' && git push",
     "lint": "eslint",
     "lint:fix": "eslint --fix"
