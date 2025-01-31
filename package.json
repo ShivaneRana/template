@@ -7,7 +7,6 @@
     "test": "jest",
     "watch": "jest --watch *.js",
     "server": "webpack server",
-    "setupSSH": "eval \"$(ssh-agent -s)\" && [ -f ~/.ssh/id_ed25519 ] && ssh-add ~/.ssh/id_ed25519 && ssh-add -l || echo 'SSH key not found or failed to add'",
     "deploy": "gh-pages -d dist",
     "build": "webpack",
     "pwrite": "npx prettier . --write",
