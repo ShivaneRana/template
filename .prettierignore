@@ -1,9 +1,14 @@
-# Ignore artifacts:
+# Ignore build artifacts
 build
 coverage
 node_modules
+
+# Ignore config files
 webpack.config.js
 eslint.config.mjs
 package-lock.json
 package.json
+
+# Ignore Git and Prettier ignore files
 .gitignore
+.prettierignore
